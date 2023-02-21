@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import {Sidebar} from './components'
+import {Sidebar} from './components';
 import { useStateContext } from './contexts/ContextProvider';
 import './App.css'
 const App = () => {
@@ -20,8 +20,6 @@ const App = () => {
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
     <BrowserRouter>
       <div className="flex relative dark:bg-main-dark-bg">
-        <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
-        </div>
         {activeMenu ? (
           <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
             <Sidebar />

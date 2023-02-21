@@ -1,37 +1,20 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import {Sidebar} from './components';
-import { useStateContext } from './contexts/ContextProvider';
-import './App.css'
-const App = () => {
-  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+import React from 'react';
 
-  useEffect(() => {
-    const currentThemeColor = localStorage.getItem('colorMode');
-    const currentThemeMode = localStorage.getItem('themeMode');
-    if (currentThemeColor && currentThemeMode) {
-      setCurrentColor(currentThemeColor);
-      setCurrentMode(currentThemeMode);
-    }
-  }, []);
+
+
+import {  Sidebar } from './components';
+import './App.css';
+
+
+const App = () => {
+  
 
 
   return (
-    <div className={currentMode === 'Dark' ? 'dark' : ''}>
-    <BrowserRouter>
-      <div className="flex relative dark:bg-main-dark-bg">
-        {activeMenu ? (
-          <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
-            <Sidebar />
-          </div>
-        ) : (
-          <div className="w-0 dark:bg-secondary-dark-bg">
-            <Sidebar />
-          </div>
-        )}
-      </div>
-    </BrowserRouter>
-  </div>
+    
+          <div>
+          <Sidebar/>
+        </div>
 )
 }
 

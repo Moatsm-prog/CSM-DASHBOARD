@@ -1,21 +1,9 @@
-import React from 'react';
-
-
-
-import {  Sidebar } from './components';
-import './App.css';
-
-
+import React from 'react'
+import Sidebar from './Components/Sidebar'
 const App = () => {
-  
-
-
   return (
-    
-          <div>
-          <Sidebar/>
-        </div>
-)
+    <div><Sidebar/></div>
+  )
 }
 
 export default App

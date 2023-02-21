@@ -2,7 +2,9 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <h1>aya</h1>
+    <div>
+      aya
+    </div>
   )
 }
 

@@ -57,9 +57,9 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Cards",
+    name: "Users",
     key: "tables",
-    icon: <Icon fontSize="small">credit_card</Icon>,
+    icon: <Icon fontSize="small">people</Icon>,
     route: "/tables",
     component: <Tables />,
   },
@@ -73,9 +73,9 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Users",
+    name: "Cards",
     key: "rtl",
-    icon: <Icon fontSize="small">people</Icon>,
+    icon: <Icon fontSize="small">credit_card</Icon>,
     route: "/rtl",
     component: <RTL />,
   },
